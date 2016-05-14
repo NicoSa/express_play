@@ -11,4 +11,8 @@ router.get('/test', function(req, res, next) {
   res.send(array)
 });
 
+router.post('/test', function(req, res, next) {
+  res.json(req.body['lol'])
+});
+
 module.exports = router;
